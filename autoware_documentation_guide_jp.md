@@ -7,8 +7,8 @@ Autowareをインストールする方法は [installation_jp.md](./installation
 公式サイトではなく、上記のサイトを見るように。
 
 
-## Degine Documentation
-Autowareは主にSensing, Localization, Perception, Planning, Controlモジュールで構成されいている。
+## Design Documentation
+Autowareは主にSensing, Localization, Perception, Planning, Controlモジュールで構成されている。
 
 [Autoware Universeのノードグラフ](https://tier4.github.io/autoware-documentation/latest/design/node-diagram/) は各モジュールの関係図を可視化したものである。
 各モジュールのソースコードは下記表にて記載。
