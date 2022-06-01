@@ -2,15 +2,15 @@
 公式ドキュメントは [こちら](https://autowarefoundation.github.io/autoware-documentation/main/).
 
 ## インストール方法
-Autowareをインストールする方法は [installation_jp.md](./installation_jp.md)と [installation_en.md](./installation_en.md) に書かれている。
-
-公式サイトではなく、上記のサイトを見るように。
+自動運転AIチャレンジ用 ベースレポジトリAutowareをインストールする方法は [installation_jp.md](./installation_jp.md)と [installation_en.md](./installation_en.md) を参照。
 
 
 ## Design Documentation
 Autowareは主にSensing, Localization, Perception, Planning, Controlモジュールで構成されている。
+各モジュールの動作は各パッケージのREADMEや、[公式ドキュメント](https://autowarefoundation.github.io/autoware-documentation/main/)を参照。
 
-[Autoware Universeのノードグラフ](https://tier4.github.io/autoware-documentation/latest/design/node-diagram/) は各モジュールの関係図を可視化したものである。
+[Autoware Universeのノードダイアグラム](https://tier4.github.io/autoware-documentation/latest/design/node-diagram/) は各モジュールの関係図を可視化したものである。
+競技用レポジトリのlaunchファイル、システム構成は[ベースレポジトリのノードダイアグラム](https://drive.google.com/file/d/1o8onRPBdhQ5zbgDRxfL7Vq7brMTrpu6E/view?usp=sharing) を参照。
 各モジュールのソースコードは下記表にて記載。
 
 | Module name  | Source code path | Explanation | 
@@ -23,4 +23,4 @@ Autowareは主にSensing, Localization, Perception, Planning, Controlモジュ�
 
 ## ソースコード編集時の注意事項
 
-- lanelet2_map.osmファイルに書かれた制限速度を読み込んでいる部分のソースコードは変更しない事。
+- 地図ファイルlanelet2_map.osm 及び、地図ファイルに書かれた制限速度を読み込む部分のソースコードは変更しない事。

@@ -23,6 +23,8 @@ $ ./psim.sh
 Logging Simulator (ROSBAG Simulator)。
 ROSBAGを再生し、Sensing、Localization（自己位置推定）、Detection（物体検出）、Planning（経路計画）の挙動を確認できる。
 （ROSBAGには事前にセンサー情報、車両のフィードバック情報などを保存しておく。）
+`src/autoware/launcher/autoware_launch/launch/logging_simulator.launch.xml` の Optional parametersを編集することで検証したいモジュールだけを動作させることが可能。
+rosbagは [こちら](https://drive.google.com/drive/folders/1rmRtTkxzzIgh1Na3ocdcvFkpiOxl8VOx?usp=sharing) からDL可能。
 
 手順1
 ```
