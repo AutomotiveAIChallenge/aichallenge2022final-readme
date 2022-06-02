@@ -11,8 +11,8 @@ Ubuntu 20.04
 
 ```
 $ cd # go to home directory
-$ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-test
-$ cd ~/aichallenge2022final-test
+$ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-base
+$ cd ~/aichallenge2022final-base
 $ ./setup_ubuntu20.04.sh # ※Note 1
 $ source /opt/ros/galactic/setup.bash
 $ colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Release # ※Note 2
@@ -32,7 +32,7 @@ $ MAKEFLAGS=-j1 colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Re
 ~~If Rviz is launched by the following commands, the launch test is completed.~~ 
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/aichallenge2022final-test
+$ cd ~/aichallenge2022final-base
 $ source install/setup.bash
 $ cd scripts
 $ # ./can_config.sh # only real experiments

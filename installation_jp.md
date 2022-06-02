@@ -11,8 +11,8 @@ Ubuntu 20.04環境
 
 ```
 $ cd # ホームディレクトリへ
-$ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-test.git
-$ cd ~/aichallenge2022final-test
+$ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-base.git
+$ cd ~/aichallenge2022final-base
 $ ./setup_ubuntu20.04.sh # ※注意1
 $ source /opt/ros/galactic/setup.bash
 $ colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Release # ※注意2
@@ -34,7 +34,7 @@ $ MAKEFLAGS=-j1 colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Re
 **Simulatorを動かすとき**
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/aichallenge2022final-test
+$ cd ~/aichallenge2022final-base
 $ source install/setup.bash
 $ cd scripts
 $ ./psim.sh
@@ -44,7 +44,7 @@ Rvizが立ち上がれば動作確認完了
 **自動運転用ゴルフカートを動かすとき**
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/aichallenge2022final-test
+$ cd ~/aichallenge2022final-base
 $ source install/setup.bash
 $ cd scripts
 $ # ./can_config.sh # 実機のときのみ必要
