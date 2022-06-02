@@ -11,7 +11,7 @@ Ubuntu 20.04環境
 
 ```
 $ cd # ホームディレクトリへ
-$ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-test
+$ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-test.git
 $ cd ~/aichallenge2022final-test
 $ ./setup_ubuntu20.04.sh # ※注意1
 $ source /opt/ros/galactic/setup.bash
