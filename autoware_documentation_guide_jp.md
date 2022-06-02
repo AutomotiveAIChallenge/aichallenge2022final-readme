@@ -1,8 +1,16 @@
 # Autoware Documentation Guide
-公式ドキュメントは [こちら](https://autowarefoundation.github.io/autoware-documentation/main/).
+参加者は次の手順で作業を進めてください。
+- [Autowareをインストール](#インストール方法)
+- [AutowareのDesign Documentation](#design-documentation)を見ながら、自分の追加したい機能を追加
+- [シミュレータ(Psim/Sim)](./launch_simulator_jp.md)を使って動作確認
+
+
+
+以下は参考。
+- [公式ドキュメント](https://autowarefoundation.github.io/autoware-documentation/main/).
 
 ## インストール方法
-自動運転AIチャレンジ用 ベースレポジトリAutowareをインストールする方法は [installation_jp.md](./installation_jp.md)と [installation_en.md](./installation_en.md) を参照。
+自動運転AIチャレンジ用 ベースレポジトリAutowareをインストールする方法は [installation_jp.md](./installation_jp.md)を参照。
 
 Autowareセットアップ時に、PC環境によってはNvidia driverやCUDAの競合、その他エラーが起きる可能性があるため、エラーが発生した場合は[error_resolution_jp.md](./error_resolution_jp.md)を参照。
 それでもわからない場合はSlackにて運営に連絡。
