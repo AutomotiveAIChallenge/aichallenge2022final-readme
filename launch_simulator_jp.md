@@ -6,7 +6,7 @@ src下のソースコードを使ったPlanning（経路計画）、Control（�
 手順1
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/aichallenge2022final-base
+$ cd ~/aichallenge2022final
 $ source install/setup.bash
 $ cd scripts
 $ ./psim.sh
@@ -34,7 +34,7 @@ $ unzst filename
 手順1
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/aichallenge2022final-base
+$ cd ~/aichallenge2022final
 $ source install/setup.bash
 $ cd scripts
 $ ./lsim.sh
