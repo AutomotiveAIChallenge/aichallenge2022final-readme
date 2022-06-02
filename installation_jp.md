@@ -31,7 +31,7 @@ $ MAKEFLAGS=-j1 colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Re
 ## 動作確認
 
 
-Simulatorを動かすとき
+**Simulatorを動かすとき**
 ```
 $ source /opt/ros/galactic/setup.bash
 $ cd ~/aichallenge2022final-test
@@ -39,8 +39,9 @@ $ source install/setup.bash
 $ cd scripts
 $ ./psim.sh
 ```
+Rvizが立ち上がれば動作確認完了
 
-自動運転用ゴルフカートを動かすとき
+**自動運転用ゴルフカートを動かすとき**
 ```
 $ source /opt/ros/galactic/setup.bash
 $ cd ~/aichallenge2022final-test
@@ -50,4 +51,3 @@ $ # ./can_config.sh # 実機のときのみ必要
 $ ./run.sh
 ```
 
-[こちら](./launch_simulator_jp.md)のRvizが立ち上がれば動作確認完了

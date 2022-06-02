@@ -4,6 +4,9 @@
 ## インストール方法
 自動運転AIチャレンジ用 ベースレポジトリAutowareをインストールする方法は [installation_jp.md](./installation_jp.md)と [installation_en.md](./installation_en.md) を参照。
 
+Autowareセットアップ時に、PC環境によってはNvidia driverやCUDAの競合、その他エラーが起きる可能性があるため、エラーが発生した場合は[error_resolution_jp.md](./error_resolution_jp.md)を参照。
+それでもわからない場合はSlackにて運営に連絡。
+
 
 ## Design Documentation
 Autowareは主にSensing, Localization, Perception, Planning, Controlモジュールで構成されている。

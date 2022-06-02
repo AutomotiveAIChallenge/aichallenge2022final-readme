@@ -2,7 +2,7 @@
 
 ## Errors at "setup_ubuntu20.04.sh"
 
-- **TASK [cuda : CUDA (add CUDA repository into sources.list)]でfail**
+### Fail at TASK [cuda : CUDA (add CUDA repository into sources.list)]
   
   ![image](https://user-images.githubusercontent.com/45618513/171146891-d3b7c601-cf47-405e-b80a-ac8af2b103a7.png)
 
@@ -13,7 +13,7 @@
   
  
 
-- **Fail at TASK [cuda : install software-properties-common]**
+### Fail at TASK [cuda : install software-properties-common]
 
   ![Screenshot from 2022-05-16 10-49-50](https://user-images.githubusercontent.com/67366636/169556134-d19a0103-1f23-44c6-b31c-2181e83f56eb.png)
 
@@ -32,7 +32,7 @@
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys XXXXXX 
   ```
   
-- **Fail at TASK [tensorrt : TensorRT (install libraries for TensorRT 7)]**
+### Fail at TASK [tensorrt : TensorRT (install libraries for TensorRT 7)]
 
   ![Screenshot from 2022-05-23 23-12-47](https://user-images.githubusercontent.com/67366636/169840548-078d9650-a2e5-48ae-b474-89008d1e48d8.png)
   
@@ -45,7 +45,7 @@
   sudo dpkg --remove --force-remove-reinstreq XXXXXXX　※Forcibly remove the not upgraded package in the lower part of the error message in the attached image.
   ```
   
-- **Fail at TASK [libtorch : Libtorch (unarchive)]**
+### Fail at TASK [libtorch : Libtorch (unarchive)]
 
   ![Screenshot from 2022-05-23 23-25-46](https://user-images.githubusercontent.com/67366636/169854877-9bc3b1fa-46de-42c5-80d1-0ff57a01ab56.png)
   
@@ -59,7 +59,7 @@
       <img src="https://user-images.githubusercontent.com/67366636/169856701-2b06197a-9d92-4987-aeb1-b906f903bb33.png" width="75%">
 
 ## Errors at "colcon build"
-- **Failed  <<<  tier4_planning_rviz_plugin**
+### Failed  <<<  tier4_planning_rviz_plugin
 
   ![Screenshot from 2022-05-24 08-53-40](https://user-images.githubusercontent.com/67366636/169956833-74c7c729-7284-4806-a43c-47b2fbb67adf.png) 
   
@@ -74,7 +74,7 @@
   ```  
 
 ## Errors at "PSim / LSim"
-- **Error at [rmw_cyclonedds_cpp]**
+### Error at [rmw_cyclonedds_cpp]
 
   ![Screenshot from 2022-05-26 22-40-13](https://user-images.githubusercontent.com/67366636/170617250-f743cbc1-0e9a-4915-84aa-688fdf49a7b1.png)
 
