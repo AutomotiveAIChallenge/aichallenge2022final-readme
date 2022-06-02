@@ -20,7 +20,7 @@ $ colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Release # ※注
 
 注意1
 > y, passward, y の順番で受け答えする。
-> エラーが出た場合は[こちら](./error_resolution_jp.md)を参照。
+> Autowareセットアップ時に、PC環境によってはNvidia driverやCUDAの競合、その他エラーが起きる可能性があるため、エラーが発生した場合は[error_resolution_jp.md](./error_resolution_jp.md)を参照。
 
 注意2
 > ビルドの負荷が高く、ビルドに失敗するときは下記コマンドを使用する。(ビルドの負荷を制限しています。)

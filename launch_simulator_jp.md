@@ -6,7 +6,7 @@ src下のソースコードを使ったPlanning（経路計画）、Control（�
 手順1
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/pilot-auto.test.x1.aichallenge
+$ cd ~/aichallenge2022final-test
 $ source install/setup.bash
 $ cd scripts
 $ ./psim.sh
@@ -29,7 +29,7 @@ rosbagは [こちら](https://drive.google.com/drive/folders/1rmRtTkxzzIgh1Na3oc
 手順1
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/pilot-auto.test.x1.aichallenge
+$ cd ~/aichallenge2022final-test
 $ source install/setup.bash
 $ cd scripts
 $ ./lsim.sh
