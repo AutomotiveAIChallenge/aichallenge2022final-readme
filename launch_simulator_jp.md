@@ -42,7 +42,7 @@ $ ./lsim.sh
 
 手順2 : ROSBAGを再生
 ```
-$ ros2 bag play /path/to/rosbag.db3
+$ ros2 bag play /path/to/rosbag.db3 --clock
 ```
 
 各コースのROSBAGが再生され、点群データ、カメラデータが出力される。
