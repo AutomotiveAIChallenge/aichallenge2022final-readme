@@ -1,6 +1,6 @@
 # Autoware Documentation Guide
 参加者は次の手順で作業を進めてください。
-- [Autowareをインストール](#インストール方法)
+- [Autowareをインストール](./installation_jp.md)
 - [AutowareのDesign Documentation](#design-documentation)を見ながら、自分の追加したい機能を追加
 - [シミュレータ(Psim/Sim)](./launch_simulator_jp.md)を使って動作確認
 
