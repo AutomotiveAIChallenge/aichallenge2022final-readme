@@ -15,7 +15,7 @@ $ git clone git@github.com:AutomotiveAIChallenge/aichallenge2022final-base.git .
 $ cd ~/aichallenge2022final
 $ ./setup_ubuntu20.04.sh # ※注意2
 $ source /opt/ros/galactic/setup.bash
-$ colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Release # ※注意3
+$ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release # ※注意3
 ```
 
 注意1
