@@ -29,7 +29,7 @@ cloneするrepository(git@github.com:AutomotiveAIChallengeaichallenge2022final-b
 注意3
 > ビルドの負荷が高く、ビルドに失敗するときは下記コマンドを使用する。(ビルドの負荷を制限しています。)
 ```
-$ MAKEFLAGS=-j1 colcon build --symlink-install --cmake-args -DCMAKE_BUILDTYPE=Release --parallel-worker 1
+$ MAKEFLAGS=-j1 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --parallel-worker 1
 ```
 
 ## 動作確認

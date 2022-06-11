@@ -3,8 +3,8 @@
 - [Autowareをインストール](./installation_jp.md)
 - [AutowareのDesign Documentation](#design-documentation)を見ながら、自分の追加したい機能を追加
 - [シミュレータ(Psim/Sim)](./launch_simulator_jp.md)を使って動作確認
-
-
+- 当日のセットアップは[車両セットアップ方法](./vehicle_setup_jp.md)を見ながらやる
+    > 資料は事前に見ておくこと。ビルドも事前に済ませておくと練習時間が増える。
 
 以下は参考。
 - [公式ドキュメント](https://autowarefoundation.github.io/autoware-documentation/main/).
@@ -20,7 +20,7 @@ Autowareセットアップ時に、PC環境によってはNvidia driverやCUDA�
 Autowareは主にSensing, Localization, Perception, Planning, Controlモジュールで構成されている。
 各モジュールの動作は各パッケージのREADMEや、[公式ドキュメント](https://autowarefoundation.github.io/autoware-documentation/main/)を参照。
 
-[Autoware Universeのノードダイアグラム](https://tier4.github.io/autoware-documentation/latest/design/node-diagram/) は各モジュールの関係図を可視化したものである。
+
 競技用レポジトリのlaunchファイル、システム構成は[ベースレポジトリのノードダイアグラム](https://drive.google.com/file/d/1o8onRPBdhQ5zbgDRxfL7Vq7brMTrpu6E/view?usp=sharing) を参照。
 各モジュールのソースコードは下記表にて記載。
 
