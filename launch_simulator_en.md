@@ -7,7 +7,7 @@ Planning simulator can check the control behavior (Planning and Control) by usin
 1. Launch Psim
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/pilot-auto.test.x1.aichallenge
+$ cd ~/aichallenge2021final
 $ source install/setup.bash
 $ cd scripts
 $ ./psim.sh
@@ -28,7 +28,7 @@ Logging simulator, by planing ROSBAG, checks the results of the Localization, Pe
 1. Launch Lsim
 ```
 $ source /opt/ros/galactic/setup.bash
-$ cd ~/pilot-auto.test.x1.aichallenge
+$ cd ~/aichallenge2021final
 $ source install/setup.bash
 $ cd scripts
 $ ./lsim.sh

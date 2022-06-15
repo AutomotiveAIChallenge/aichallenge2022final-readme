@@ -27,7 +27,7 @@
   - [NVIDIA website](https://developer.nvidia.com/blog/updating-the-cuda-linux-gpg-repository-key/)
   - [Japanese Site](https://www.nemotos.net/?p=5178)
 
-  ※If the site's procedures and error solutions do not work, 、Add XXXXXXX public key
+  ※If the site's procedures and error solutions do not work, ，Add XXXXXXX public key
   ```  
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys XXXXXX 
   ```
@@ -54,7 +54,7 @@
   1. Download [this package](https://drive.google.com/u/0/uc?id=1eNh3F3xCQ4AMJEHtwb1dhshSyzWMjoc8) 
   2. Rename the downloaded zip file to **libtorch.zip**.
   3. Move libtorch.zip to /tmp
-  4. Comment out 2~5 lines in　/pilot-auto.test.x1.aichallenge/ansible/roles/libtorch/tasks/main.yaml
+  4. Comment out 2~5 lines in　/aichallenge2021final/ansible/roles/libtorch/tasks/main.yaml
   
       <img src="https://user-images.githubusercontent.com/67366636/169856701-2b06197a-9d92-4987-aeb1-b906f903bb33.png" width="75%">
 
@@ -63,7 +63,7 @@
 
   ![Screenshot from 2022-05-24 08-53-40](https://user-images.githubusercontent.com/67366636/169956833-74c7c729-7284-4806-a43c-47b2fbb67adf.png) 
   
-  Change the following in　/pilot-auto.test.x1.aichallenge/src/autoware/universe/common/tier4_planning_rviz_plugin/src/tools/jsk_overlay_utils.hpp
+  Change the following in　/aichallenge2021final/src/autoware/universe/common/tier4_planning_rviz_plugin/src/tools/jsk_overlay_utils.hpp
   
   ```  
   #include <QImage>
