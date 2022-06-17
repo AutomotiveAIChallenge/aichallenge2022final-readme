@@ -8,8 +8,20 @@ vehicle interfaceの起動のため、`~/vi_ws/install` 内で参照されてい
 1. aichallenge2022final-testの移動 `mv aichallenge2022final-test/ aichallenge2022final-test_bk`
 2. シンボリックリンクの適用 
 `cd ~/`
-`ln -snf /home/autoware/<開発に使用しているレポジトリ> aichallenge2022final-test`
 
+`ln -snf /home/autoware/<開発に使用しているレポジトリ> aichallenge2022final-test`
+3. vehicle interface の起動確認
+`scripts/run.sh` 
+を実行し、
+`ros2 node list |grep g30` で以下のノードが起動していることを確認する. 
+
+```
+/g30esli/socket_can_receiver
+/g30esli/socket_can_sender
+/g30esli_interface
+/g30esli_interface_awiv_adapt_receiver
+/g30esli_interface_awiv_adapt_sender
+```
 
 
 ## センサとの接続方法
