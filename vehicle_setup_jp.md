@@ -1,4 +1,17 @@
 # Autowareで車両を動かす方法
+
+## Vehicle interfaceの有効化
+別途ビルドされた `~/vi_ws` の中にvehicle interfaceが入っております。
+vehicle interfaceの起動のため、`~/vi_ws/install` 内で参照されているディレクトリを変更する必要があります。
+初回のみ、以下の作業を行ってください。
+
+1. aichallenge2022final-testの移動 `mv aichallenge2022final-test/ aichallenge2022final-test_bk`
+2. シンボリックリンクの適用 
+`cd ~/`
+`ln -snf /home/autoware/<開発に使用しているレポジトリ> aichallenge2022final-test`
+
+
+
 ## センサとの接続方法
 LiDARとCameraデータを取得するための方法を説明する．
 
