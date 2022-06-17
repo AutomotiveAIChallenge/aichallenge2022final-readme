@@ -18,9 +18,9 @@ LiDARとCameraデータを取得するための方法を説明する．
 
 6. 車両IDの設定．
     ```
-    $ export VEHICLE_ID=3 # 3号車の場合
+    $ export VEHICLE_ID=3 # 3号車の場合. VEHICLE_IDは競技当日、メンターから提示.
     ```
-7. （カメラを使う場合は）カメラノードを立ち上げる．
+7. （カメラを使う場合は）別ターミナルでカメラノードを立ち上げる．
     ```
     $ ./launch_camera.sh
     ```
@@ -28,46 +28,52 @@ LiDARとCameraデータを取得するための方法を説明する．
 
 ## 接続確認
 
-1. 下記コマンドで応答があるか確認．
+1. 下記コマンドでLiDARから応答があるか確認．
     ```
     $ ping 192.168.1.201
     ```
 2. 応答がない場合，tcpdumpコマンドでどのIPからパケットが来ているか調べる．
     ```
-    $ sudo tcpdump
+    $ sudo tcpdump -i <network IF name>
     ```
     ※出力は `時刻 IPアドレス > 255.255.255.255.xxxx: UDP, length 1206` ．
 
-## Autowareで制御する手順
+## Autoware起動〜自動運転開始の操作
 ※車両を動かすときは，必ず [車両を動かす際の注意点](#車両を動かす際の注意点)を読み，必ずそこに書いてあることを守ること．
 
 1. 下記コマンドでAutowareを起動する．
 ```
-$ source /opt/ros/galactic/setup.bash
+$ source /opt/ros/galactic/setup.bash #.bashrc記載の場合は不要
 $ cd ~/aichallenge2022final
-$ source install/setup.bash
+$ source install/setup.bash #.bashrc記載の場合は不要
 $ cd scripts
 $ ./can_config.sh # 実機のときのみ必要
 $ ./run.sh
 ```
 
-2. ゴール地点を指定．
-- Aコースの場合：Psimと同じ容量でゴール地点を設定．
-- Bコースの場合：scriptディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
+2. 自己位置推定を開始する.
+- Aコースの場合: Psim同様, 2D pose estimate をrVizから入力する.
+- Bコースの場合: `scripts/B_set_start.sh` を実行すると自己位置推定
 
-3. Web controllerを開き，Vehicle Engageを押す（Trueにする）．
-    - [web controller](localhost:8085/web_controller/index.html)
-    - Vehicle Engage項目のengageボタンをクリック
+3. ゴール地点を指定する．
+- Aコースの場合：Psimと同じ要領でゴール地点を設定．
+- Bコースの場合：scriptsディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
 
-4. Autoware Engageは，Rvizの左したにあるEngageボタンを押す．
+4. Web controllerを開き，Vehicle Engage, Autoware Engage が falseになっていることを確認後, Vehicle Engageを押す（Trueにする）．
+- [web controller](localhost:8085/web_controller/index.html)
+- Vehicle Engage項目のengageボタンをクリック
+
+5. rVizをアクティブにし、の左下にあるEngageボタンを押す．
 
 
 
 ## 車両を動かす際の注意点
 
 1. 自動運転発進の際のコミュニケーション．
+    - 参加者: ステップ3の `ゴール地点を指定する` まで完了する.
+    - 参加者: 「Autoware準備OKです.」
     - SD：「自動運転準備OKです．」
-    - 参加者：Web controllerを立ち上げる．
+    - 参加者：Web controllerを立ち上げる．(以降ステップ4)
     - 参加者：Web controllerでVehicle engageをEngageする．
     - SD：「Engageお願いします．」
     - 参加者：RvizでAutoware engageをする．
@@ -75,6 +81,6 @@ $ ./run.sh
 2. オーバーライドが発生した際（ドライバーが車両を停止させたとき）は以下の手順を必ず行う．
     - [web controller](localhost:8085/web_controller/index.html)上でAutoware EngageとVehicle Engage項目のDisengageボタンを押す．
     
-        ※例えすでにFalseになっていたとしても，必ずDisengageを押す．
+        ※既にFalseになっていたとしても，必ずDisengageを押す．
 
 
