@@ -70,26 +70,26 @@ LiDARとCameraデータを取得するための方法を説明する．
 ※車両を動かすときは，必ず [車両を動かす際の注意点](#車両を動かす際の注意点)を読み，必ずそこに書いてあることを守ること．
 
 1. 下記コマンドでAutowareを起動する．
-```
-$ source /opt/ros/galactic/setup.bash #.bashrc記載の場合は不要
-$ cd ~/aichallenge2022final
-$ source install/setup.bash #.bashrc記載の場合は不要
-$ cd scripts
-$ ./can_config.sh # 実機のときのみ必要
-$ ./run.sh
-```
+    ```
+    $ source /opt/ros/galactic/setup.bash #.bashrc記載の場合は不要
+    $ cd ~/aichallenge2022final
+    $ source install/setup.bash #.bashrc記載の場合は不要
+    $ cd scripts
+    $ ./can_config.sh # 実機のときのみ必要
+    $ ./run.sh
+    ```
 
 2. 自己位置推定を開始する.
-- Aコースの場合: Psim同様, 2D pose estimate をrVizから入力する.
-- Bコースの場合: `scripts/B_set_start.sh` を実行すると自己位置推定
+    - Aコースの場合: Psim同様, 2D pose estimate をrVizから入力する.
+    - Bコースの場合: `scripts/B_set_start.sh` を実行すると自己位置推定
 
 3. ゴール地点を指定する．
-- Aコースの場合：Psimと同じ要領でゴール地点を設定．
-- Bコースの場合：scriptsディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
+    - Aコースの場合：Psimと同じ要領でゴール地点を設定．
+    - Bコースの場合：scriptsディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
 
 4. Web controllerを開き，Vehicle Engage, Autoware Engage が falseになっていることを確認後, Vehicle Engageを押す（Trueにする）．
-- [web controller](localhost:8085/web_controller/index.html)
-- Vehicle Engage項目のengageボタンをクリック
+    - [web controller](localhost:8085/web_controller/index.html)
+    - Vehicle Engage項目のengageボタンをクリック
 
 5. rVizをアクティブにし、の左下にあるEngageボタンを押す．
 
