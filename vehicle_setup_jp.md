@@ -67,29 +67,29 @@ LiDARとCameraデータを取得するための方法を説明する．
     ※出力は `時刻 IPアドレス > 255.255.255.255.xxxx: UDP, length 1206` ．
 
 ## Autoware起動〜自動運転開始の操作
-※車両を動かすときは，必ず [車両を動かす際の注意点](#車両を動かす際の注意点)を読み，必ずそこに書いてあることを守ること．
+※車両を動かす前に，必ず [車両を動かす際の注意点](#車両を動かす際の注意点)を一読ください．
 
 1. 下記コマンドでAutowareを起動する．
-```
-$ source /opt/ros/galactic/setup.bash #.bashrc記載の場合は不要
-$ cd ~/aichallenge2022final
-$ source install/setup.bash #.bashrc記載の場合は不要
-$ cd scripts
-$ ./can_config.sh # 実機のときのみ必要
-$ ./run.sh
-```
+    ```
+    $ source /opt/ros/galactic/setup.bash #.bashrc記載の場合は不要
+    $ cd ~/aichallenge2022final
+    $ source install/setup.bash #.bashrc記載の場合は不要
+    $ cd scripts
+    $ ./can_config.sh # 実機のときのみ必要
+    $ ./run.sh
+    ```
 
 2. 自己位置推定を開始する.
-- Aコースの場合: Psim同様, 2D pose estimate をrVizから入力する.
-- Bコースの場合: `scripts/B_set_start.sh` を実行すると自己位置推定
+    - Aコースの場合: Psim同様, 2D pose estimate をrVizから入力する.
+    - Bコースの場合: `scripts/B_set_start.sh` を実行すると自己位置推定
 
 3. ゴール地点を指定する．
-- Aコースの場合：Psimと同じ要領でゴール地点を設定．
-- Bコースの場合：scriptsディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
+    - Aコースの場合：Psimと同じ要領でゴール地点を設定．
+    - Bコースの場合：scriptsディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
 
 4. Web controllerを開き，Vehicle Engage, Autoware Engage が falseになっていることを確認後, Vehicle Engageを押す（Trueにする）．
-- [web controller](localhost:8085/web_controller/index.html)
-- Vehicle Engage項目のengageボタンをクリック
+    - [web controller](localhost:8085/web_controller/index.html)
+    - Vehicle Engage項目のengageボタンをクリック
 
 5. rVizをアクティブにし、の左下にあるEngageボタンを押す．
 
@@ -111,4 +111,8 @@ $ ./run.sh
     
         ※既にFalseになっていたとしても，必ずDisengageを押す．
 
+3. Vehicle Engage時に，ハンドルが急回転することがある．本事象が発生した場合は、Autoware Engage と Vehicle EngageをFalseにしてから手順をやり直す．
+4. 自動走行時，PCを操作しない参加者は, 歩道上で待機する．(経路上や車両周囲は立ち入り禁止)
+5. 自動走行時は必ず上部の手すりを掴む．
+6. 自動運転に使用するノートPCをバンドで固定する. キーボードが打ちづらい場合は貸出用のキーボードを使用する．
 
