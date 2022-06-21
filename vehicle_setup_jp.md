@@ -88,7 +88,8 @@ LiDARとCameraデータを取得するための方法を説明する．
     - Bコースの場合：scriptsディレクトリで`./B_set_goal.sh`を実行するとゴールが指定される．
 
 4. Web controllerを開き，Vehicle Engage, Autoware Engage が falseになっていることを確認後, Vehicle Engageを押す（Trueにする）．
-    - [web controller](localhost:8085/web_controller/index.html)
+    - web controllerを起動（下記URL）
+        - localhost:8085/web_controller/index.html
     - Vehicle Engage項目のengageボタンをクリック
 
 5. rVizをアクティブにし、の左下にあるEngageボタンを押す．
