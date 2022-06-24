@@ -106,6 +106,15 @@ LiDARとCameraデータを取得するための方法を説明する．
     - 参加者：Web controllerでVehicle engageをEngageする．
     - SD：「Engageお願いします．」
     - 参加者：RvizでAutoware engageをする．
+    - sei
+    - SD: Golf Cartを自動モードに設定する．
+    - メンター: 競技参加者に "Webコントローラーを起動．Vehicle engageとAutoware engageのdisengageを押下する" 指示を出す．
+    - 参加者: Webコントローラーを起動．Vehicle engageとAutoware engageのdisengageを押下．
+    - メンター: 競技参加者に "Vehicle engageを押下する" 指示を出す．
+    - 競技参加者: Vehicle engageのengageを押下．
+    - SD: ステアの挙動から，正常にVehicle engageされたことを確認．
+    - メンター: "RVizに切り替え，Autoware engageを押下する" 指示を出す．
+    - 競技参加者: RVizに切り替え，Autoware engageボタンを押下．
 
 2. オーバーライドが発生した際（ドライバーが車両を停止させたとき）は以下の手順を必ず行う．
     - [web controller](localhost:8085/web_controller/index.html)上でAutoware EngageとVehicle Engage項目のDisengageボタンを押す．
