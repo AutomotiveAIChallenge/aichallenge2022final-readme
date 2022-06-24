@@ -99,14 +99,6 @@ LiDARとCameraデータを取得するための方法を説明する．
 ## 車両を動かす際の注意点
 
 1. 自動運転発進の際のコミュニケーション．
-    - 参加者: ステップ3の `ゴール地点を指定する` まで完了する.
-    - 参加者: 「Autoware準備OKです.」
-    - SD：「自動運転準備OKです．」
-    - 参加者：Web controllerを立ち上げる．(以降ステップ4)
-    - 参加者：Web controllerでVehicle engageをEngageする．
-    - SD：「Engageお願いします．」
-    - 参加者：RvizでAutoware engageをする．
-    - sei
     - SD: Golf Cartを自動モードに設定する．
     - メンター: 競技参加者に "Webコントローラーを起動．Vehicle engageとAutoware engageのdisengageを押下する" 指示を出す．
     - 参加者: Webコントローラーを起動．Vehicle engageとAutoware engageのdisengageを押下．
